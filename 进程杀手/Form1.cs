@@ -108,7 +108,7 @@ namespace 进程杀手
                     }
                     catch
                     {
-
+                        //当异常时，说明进程不存在或kill失败
                     }
                 }
             }
@@ -118,8 +118,6 @@ namespace 进程杀手
 
         public int[] id;
         public string[] name;
-
-        List<string> list=new List<string>();
 
 
         private void get_list()
